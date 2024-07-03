@@ -8,6 +8,33 @@
         <version>3.3.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
+    <profiles>
+        <profile>
+            <id>Garyname</id>
+            <activation>
+                <property>
+                    <name>env.HOME</name>
+                    <value>/Users/gary</value>
+                </property>
+            </activation>
+            <build>
+                <directory>${pom.basedir}/donsa</directory>
+            </build>
+        </profile>
+        <profile>
+            <id>jso</id>
+            <activation>
+                <property>
+                    <name>env.HOME</name>
+                    <value>/Users/hso</value>
+                </property>
+            </activation>
+            <build>
+                <directory>${pom.basedir}/hso</directory>
+            </build>
+        </profile>
+    </profiles>
     <groupId>com.example.SAmple</groupId>
     <artifactId>arjsjms</artifactId>
     <version>0.0.1-SNAPSHOT</version>
